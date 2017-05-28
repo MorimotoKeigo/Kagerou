@@ -15,39 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Desktop\Nyumon_GP_Sample\SampleCode\Chapter04\EnginePart1\EnginePart1\game.cpp">
+    <ClCompile Include="..\game.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Desktop\Nyumon_GP_Sample\SampleCode\Chapter04\EnginePart1\EnginePart1\graphics.cpp">
+    <ClCompile Include="..\graphics.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Desktop\Nyumon_GP_Sample\SampleCode\Chapter04\EnginePart1\EnginePart1\input.cpp">
+    <ClCompile Include="..\input.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Desktop\Nyumon_GP_Sample\SampleCode\Chapter04\EnginePart1\EnginePart1\winmain.cpp">
+    <ClCompile Include="..\kagerou.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Desktop\Nyumon_GP_Sample\SampleCode\Chapter04\EnginePart1\EnginePart1\kagerou.cpp">
+    <ClCompile Include="..\winmain.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Desktop\Nyumon_GP_Sample\SampleCode\Chapter04\EnginePart1\EnginePart1\constants.h">
+    <ClInclude Include="..\input.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Desktop\Nyumon_GP_Sample\SampleCode\Chapter04\EnginePart1\EnginePart1\game.h">
+    <ClInclude Include="..\kagerou.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Desktop\Nyumon_GP_Sample\SampleCode\Chapter04\EnginePart1\EnginePart1\gameError.h">
+    <ClInclude Include="..\constants.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Desktop\Nyumon_GP_Sample\SampleCode\Chapter04\EnginePart1\EnginePart1\graphics.h">
+    <ClInclude Include="..\game.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Desktop\Nyumon_GP_Sample\SampleCode\Chapter04\EnginePart1\EnginePart1\input.h">
+    <ClInclude Include="..\gameError.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Desktop\Nyumon_GP_Sample\SampleCode\Chapter04\EnginePart1\EnginePart1\kagerou.h">
+    <ClInclude Include="..\graphics.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
