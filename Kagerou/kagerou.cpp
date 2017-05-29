@@ -1,10 +1,3 @@
-// Programming 2D Games
-// Copyright (c) 2011 by: 
-// Charles Kelly
-// Game Engine Part 1
-// Chapter 4 spacewar.cpp v1.0
-// Spacewar is the class we create.
-
 #include "kagerou.h"
 
 //=============================================================================
@@ -28,6 +21,14 @@ Kagerou::~Kagerou()
 void Kagerou::initialize(HWND hwnd)
 {
     Game::initialize(hwnd); // throws GameError
+
+	//background texture
+	if (!backgroundTexture.initialize(graphics, BACKGROUND_IMAGE))
+		throw(GameError(gameErrorNS::FATAL_ERROR, "Error initializing background texture"));
+
+	// background
+	if (!background.initialize(graphics, 0, 0, 0, &backgroundTexture))
+		throw(GameError(gameErrorNS::FATAL_ERROR, "Error initializing background"));
 
     return;
 }
@@ -54,7 +55,14 @@ void Kagerou::collisions()
 // Render game items
 //=============================================================================
 void Kagerou::render()
-{}
+{
+	graphics->spriteBegin();		//begin drawing sprites
+
+	background.draw();              //add the backgrond to the scene
+	
+	graphics->spriteEnd();          //end drawing sprites
+
+}
 
 //=============================================================================
 // The graphics device was lost.
@@ -62,6 +70,8 @@ void Kagerou::render()
 //=============================================================================
 void Kagerou::releaseAll()
 {
+	backgroundTexture.onLostDevice();
+
     Game::releaseAll();
     return;
 }
@@ -72,6 +82,8 @@ void Kagerou::releaseAll()
 //=============================================================================
 void Kagerou::resetAll()
 {
+	backgroundTexture.onResetDevice();
+
     Game::resetAll();
     return;
 }

@@ -1,8 +1,3 @@
-// Programming 2D Games
-// Copyright (c) 2011 by: 
-// Charles Kelly
-// input.cpp v1.0
-
 #include "input.h"
 
 //=============================================================================
