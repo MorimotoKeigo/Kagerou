@@ -14,7 +14,9 @@ class Kagerou : public Game
 private:
 	// game items
 	TextureManager backgroundTexture;   // background texture
+	TextureManager shipTexture;			// ship		  texture
 	Image   background;                 // background image
+	Image   ship;						// ship		  image
 
 public:
     // Constructor

@@ -24,13 +24,21 @@
 //-----------------------------------------------
 // graphic images
 const char BACKGROUND_IMAGE[] = "pictures\\background.jpg";  //picture of background
+const char SHIP_IMAGE[] = "pictures\\ship.png";   // picture of ship
+
 // window
 const char CLASS_NAME[] = "Kagerou";
 const char GAME_TITLE[] = "Kagerou";
 const bool FULLSCREEN = false;              // windowed or fullscreen       
 const UINT GAME_WIDTH = 800;                // width of game in pixels
 const UINT GAME_HEIGHT = 600;               // height of game in pixels
-
+//ship anim setting
+const int  SHIP_START_FRAME = 6;            // starting frame of ship animation
+const int  SHIP_END_FRAME = 8;              // last frame of ship animation
+const float SHIP_ANIMATION_DELAY = 0.2f;    // time between frames of ship animation
+const int  SHIP_COLS = 2;                   // ship texture has 2 columns
+const int  SHIP_WIDTH = 32;                 // width of ship image
+const int  SHIP_HEIGHT = 32;                // height of ship image
 
 
 // game
