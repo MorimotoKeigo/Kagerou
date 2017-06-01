@@ -35,10 +35,14 @@ const UINT GAME_HEIGHT = 600;               // height of game in pixels
 //ship anim setting
 const int  SHIP_START_FRAME = 6;            // starting frame of ship animation
 const int  SHIP_END_FRAME = 8;              // last frame of ship animation
-const float SHIP_ANIMATION_DELAY = 0.2f;    // time between frames of ship animation
-const int  SHIP_COLS = 2;                   // ship texture has 2 columns
+const float SHIP_ANIMATION_DELAY = 0.05f;    // time between frames of ship animation
+const int  SHIP_COLS = 3;                   // ship texture has 2 columns
 const int  SHIP_WIDTH = 32;                 // width of ship image
 const int  SHIP_HEIGHT = 32;                // height of ship image
+const float ROTATION_RATE = 180.0f;         // degrees per second
+const float SCALE_RATE = 0.2f;              // % change per second
+const float SHIP_SPEED = 100.0f;            // pixels per second
+const float SHIP_SCALE = 1.5f;              // starting ship scale
 
 
 // game
@@ -54,5 +58,9 @@ const float MAX_FRAME_TIME = 1.0f/MIN_FRAME_RATE; // maximum time used in calcul
 const UCHAR ESC_KEY      = VK_ESCAPE;   // escape key
 const UCHAR ALT_KEY      = VK_MENU;     // Alt key
 const UCHAR ENTER_KEY    = VK_RETURN;   // Enter key
+const UCHAR SHIP_LEFT_KEY = VK_LEFT;     // left arrow
+const UCHAR SHIP_RIGHT_KEY = VK_RIGHT;    // right arrow
+const UCHAR SHIP_UP_KEY = VK_UP;       // up arrow
+const UCHAR SHIP_DOWN_KEY = VK_DOWN;     // down arrow
 
 #endif
